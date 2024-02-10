@@ -31,3 +31,7 @@ console.log("But it says it converted to : " + typeof valueInPass );
 let isLoggedIn = "Shreedatt"
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log(booleanIsLoggedIn);
+
+console.log("2" + 1);
+console.log("2" + 1 +1 );
+console.log(1 + 1 + "2");//From "" it doesnt add just concat
