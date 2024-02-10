@@ -1,1 +1,1 @@
-console.log("This is my first code");
+console.log("This is my first code")
