@@ -2,7 +2,8 @@ const myArr = [0, 1, 3, 2, 4, 5]
 const tech = ["html", "css","javascript"]
 
 const myArr2 = new Array(1, 2, 3, 4)
-console.log(myArr2[3]);
+// console.log(myArr2);
+// console.log(typeof myArr2);
 
 
 // ==> Array methods
@@ -17,22 +18,22 @@ console.log(myArr2[3]);
 // console.log(myArr.includes(9)); boolean check
 // console.log(myArr.indexOf(3)); Gives index
 
-const newArr = myArr.join() //Makes string and use comas
-
-console.log(myArr);
+const newArr = myArr.join() //Makes string seperated by comas
+console.log(newArr);
 console.log(typeof newArr); //String
 
 
-// slice, splice
+// ==> Slice, splice
 
-// console.log("A ", myArr);
+console.log("A ", myArr);
 
-// const myn1 = myArr.slice(1, 3)
+const myn1 = myArr.slice(1, 3) //Excludes last element & works on call by value(copy)
+console.log(myn1);
 
-// console.log(myn1);
-// console.log("B ", myArr);
+console.log("B ", myArr);//Hence array is not changed 
 
 
-// const myn2 = myArr.splice(1, 3)
-// console.log("C ", myArr);
-// console.log(myn2);
+const myn2 = myArr.splice(1, 3) //Includes last element & works on call by reference
+
+console.log("C ", myArr); //Splice changed(removed) element from original
+console.log(myn2);
