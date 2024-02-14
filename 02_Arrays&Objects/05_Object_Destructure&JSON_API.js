@@ -26,4 +26,4 @@ console.log(courseInstructor);
 // ]
 
 // randomuser.me provides readymade APIk
-// jsonformatter.org converts JSON file to readable format
+// jsonformatter.org converts JSON file to readable format.
