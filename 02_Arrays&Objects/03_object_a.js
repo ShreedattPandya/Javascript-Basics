@@ -32,6 +32,6 @@ ClientData.greeting = function(){
     console.log(`Hello JS user, ${this.name}`); //"this" is used to refer the instance object
 }
 console.log(ClientData.greeting()); //Function call
-console.log(ClientData.greeting); //Gives its reference, i.e. [Function]    
+console.log(ClientData.greeting); //Gives its reference, i.e. [Function].   
 
 
