@@ -55,7 +55,7 @@ console.log(Object.keys(obj1));
 console.log(Object.values(obj1));
 console.log(Object.entries(obj1)); //[key:value]
 
-console.log(sing.hasOwnProperty('name')); //Key is present?
+console.log(sing.hasOwnProperty('name')); //Key is present?.
 
 
 
