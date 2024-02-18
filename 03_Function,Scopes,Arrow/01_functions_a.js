@@ -6,7 +6,7 @@ function addTwoNumbers(number1,number2){
 const result = addTwoNumbers(5,7)
 console.log("Result: ", result);
 
-function loginUserMessage(username){ // OR username = "Ram"
+function loginUserMessage(username){ // OR username = "Ram".
     if(!username){ //username === undefined
         console.log("PLease enter a username");
         return 
