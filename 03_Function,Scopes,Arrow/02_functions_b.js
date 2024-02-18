@@ -22,7 +22,7 @@ function objectFunction(anyObject){
 
 const Arr = [200,400,600,800]
 
-//Function for Array
+//Function for Array.
 function arrayFunction(anyArray){
     // return anyArray[2]   
     return anyArray.slice(0,2)
