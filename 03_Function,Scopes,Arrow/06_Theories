@@ -1,0 +1,13 @@
+- Source Code ==> 
+
+(I) =>Global Execution Context allocated in "this" 
+      object (for browser, window object is strored in "this") 
+    => Function EC
+    => Eval EC (Global object)
+
+NOTE: JS-Single threaded
+
+(II)  Memory Creation Phase :declaration, memory allocation, no exection
+(III) Execution Phase : +,- Execution           
+
+
