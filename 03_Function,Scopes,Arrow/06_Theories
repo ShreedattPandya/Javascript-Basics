@@ -10,4 +10,8 @@ NOTE: JS-Single threaded
 (II)  Memory Creation Phase :declaration, memory allocation, no exection
 (III) Execution Phase : +,- Execution           
 
+- Call Stack: Works on the basis of LIFO (Last In First Out) structure.
+              Global execution context already present as base element
+
+
 
