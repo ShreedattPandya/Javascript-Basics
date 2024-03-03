@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create & Edit Elements in DOM</title>
+</head>
+<body>
+   
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+
+    div.className = "divclass"
+    div.id = "divid";
+    div.setAttribute("title", "divtitle")
+    
+    div.style.color = "gold"
+
+    div.innerText ="This is div text" //Provides div-content
+    <!-- OR -->
+    const addText = document.createTextNode("This is my second way to input content")
+    div.appendChild(addText)
+
+    document.body.appendChild(div) //Connect DOM - div
+
+</script>
+</html>
