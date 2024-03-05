@@ -28,14 +28,15 @@
         optiLang("Java");
  
         //Edit
-        const secLang = document.querySelector("li:nth-child(2)")
+        const secLang = document.querySelector("li:nth-child(1)")
+        console.log(secLang) // <li> Javascript </li>
         const secEle = document.createElement('li');
         secEle.textContent = "texthere"
-        secLang.replaceWith(secEle);
-
+        secLang.replaceWith(secEle);  
+        
         //Another edit
         const editLang = document.querySelector("li:first-child")
-        editLang.outerHTML = '<li>Easy edited Text</li>'
+        editLang.outerHTML = '<li>Easy edited Text</li>' //replace the entire outer HTML with tags. No element needed
 
         //remove
         const lastLang = document.querySelector("li:last-child")
