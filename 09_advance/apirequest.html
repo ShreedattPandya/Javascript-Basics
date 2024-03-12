@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    <!-- XMLHttpRequest.readyState propery returns the state XMLHttpRequest client is in.It exists in one the follwowing states.
+
+    UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete. -->
+     
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/ShreedattPandya'
+    const xhr = new XMLHttpRequest();   
+    xhr.open('Get',requestUrl) 
+    xhr.onreadystatechange = function () { // used to handle(refresh) the change if new  state comes in
+        console.log(xhr.readyState); //returns what state XMLHttpRequest() is in
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText) //bydefault is in string
+            console.log(`Followers from the json(git): ${data.followers}`);
+        }
+    }
+    xhr.send() // sends a HTTP request to the server after calling this
+</script>
+</html>
